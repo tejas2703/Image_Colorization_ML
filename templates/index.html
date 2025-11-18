@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Colorization</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Colorization</h1>
+        
+        <div class="image-section">
+            <!-- Upload Box -->
+            <div class="upload-box">
+                <label for="imageUpload">Upload a black and white image</label>
+                <div class="drop-area" id="dropArea">
+                    <input type="file" id="imageUpload" accept="image/*" hidden>
+                    <img id="uploadPreview" alt="Upload Preview" style="display: none; max-width: 100%; height: auto;" />
+                    <span id="uploadText">Drop Image Here <br> - or - <br> Click to Upload</span>
+                </div>
+            </div>
+
+            <!-- Output Box -->
+            <div class="output-box">
+                <label for="output">Output</label>
+                <div id="output">
+                    <img id="outputImage" alt="output" style="max-width: 100%; height: auto;" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="clearButton">Clear</button>
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

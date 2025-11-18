@@ -1,0 +1,16 @@
+// Nature Navigator Flowchart
+digraph {
+	A [label="Telemetry Data (CSV)"]
+	B [label="Data Preprocessing"]
+	C [label="Feature Engineering"]
+	D [label="Model Training (Random Forest)"]
+	E [label="Prediction Engine"]
+	F [label="Predicted Locations"]
+	G [label="Visualization (Map)"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+}

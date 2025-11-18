@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Colorization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Colorization</h1>
+        
+        <div class="image-section">
+            <div class="upload-box">
+                <label for="imageUpload">Upload a black and white image</label>
+                <div class="drop-area" id="dropArea">
+                    <input type="file" id="imageUpload" accept="image/*" hidden>
+                    <span>Drop Image Here <br> - or - <br> Click to Upload</span>
+                </div>
+            </div>
+            
+            <div class="output-box">
+                <label for="output">Output</label>
+                <div id="output">
+                    <img id="outputImage" alt="output" />
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="clearButton">Clear</button>
+            <button id="submitButton">Submit</button>
+        </div>
+
+        <div class="examples">
+            <p>Examples</p>
+            <div class="example-images">
+                <img src="images/einstein.jpg" alt="example 1">
+                <img src="images/nature.jpg" alt="example 2">
+                <img src="images/tiger.jpg" alt="example 3">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
